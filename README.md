@@ -5,6 +5,18 @@ In the spring of 2020, individual cities, counties, and states began implementin
 
 This project makes attempts to build models that can predict Covid-19 using symptoms gathered both from an Apple Watch Series 6 and from questions posed to users about symptoms they may be experiencing. One of the logistic regression models build from just Sp02 and Pulse data was then used in an iOS app project seen here: https://github.com/crweaver225/Covid-Monitor. 
 
+This project has two Jupyter Notebooks that handle the two different datasets. The first one is Vitals_Diagnostics.ipynb which handles the vitals dataset containing Sp02, Pulse, and Temperature data along with a postive or negative Covid result. The second notebook is Symptom_Diagnostics.ipynb which has many different binary features representing different possible symptoms the user is experiencing and four possible targets (Flu, Covid-19, allergies, common cold). 
+
+### Requirements
+You will need the following libraries and languages in order to run this project:
+1. Python 3.5 or higher
+2. Scikit-Learn
+3. numpy 
+4. Matplotlib 
+
+All of these can be installed use the pip package manager or Anaconda. 
+
+### Summary Results
 The logistic model ended up having an 80% precision and 94% specificity.
 <p align="center">
   <img src="/screen-shots/1.png" width="350"/>
